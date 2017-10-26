@@ -2,54 +2,71 @@
 'use strict';
 
 let totalScore = 0;
+
+
 const userName = prompt('Hi! What\'s your name?');{
   alert ('Hi, ' + userName + ' want to play a guessing game?');
 }
 
- //I love sloths.
+questionOne();
+
+function questionOne () {
+  //I love sloths.
  const animal  = prompt ('Do I love sloths?').toLowerCase ();
-  if  (animal === 'yes' || animal=== 'y')
-  {
-    alert ("Sloths are so wierd.  I adore them.");
-  }
-  else (animalResponse === 'no' || 'n');
-  {
-    alert ('There are very few animals I don\'t like.');
-  }
+ if  (animal === 'yes' || animal=== 'y')
+ {
+   alert ("Sloths are so wierd.  I adore them.");
+ }
+ else //(animal === 'no' || animal === 'n');
+ {
+   alert ('There are very few animals I don\'t like.');
+ }
+}
+//  //I love sloths.
+//  const animal  = prompt ('Do I love sloths?').toLowerCase ();
+//   if  (animal === 'yes' || animal=== 'y')
+//   {
+//     alert ("Sloths are so wierd.  I adore them.");
+//   }
+//   else //(animal === 'no' || animal === 'n');
+//   {
+//     alert ('There are very few animals I don\'t like.');
+//   }
+
 
 //My least favorite thing is being cold.//
   const least = prompt ('Do I like the cold?').toLowerCase();
-  if (least === 'Yes' ||  least === 'Y'){
+  if (least === 'yes' ||  least === 'y'){
       alert ('No way, Jose.  I can\'t stand to be cold.');
   }
-  else if (least === 'No' || least === 'N'){
+  else if (least === 'no' || least === 'n'){
     alert ('Now you are really getting to know me!');
   }
 
   //Do you thnk I speak any languages besides English?
   const language = prompt ('Do you think I can speak any languages besides English?').toLowerCase();
-  if (language === 'Yes' || language === 'Y'){
+  if (language === 'yes' || language === 'y'){
     alert( 'Well, speak is a stretch, but I know a little French, Spanish and Norwegian');
   }
-  else if (language != 'Yes' || language != 'Y'){
+  else if (language != 'yes' || language != 'y'){
       alert ('Speak is a strong word, but I can butcher 3 different languages.');
   }
 
   //Do you think I can hula hoop?
   const hoop = prompt ('Do you think I know how to hula hoop?').toLowerCase();
-  if (hoop === 'Yes' || hoop === 'Y'){
+  if (hoop === 'yes' || hoop === 'y'){
     alert ('I can hoop and eat a taco at the same time!');
   }
-  else if (hoop != 'Yes' || hoop != 'Y'){
+  else if (hoop != 'yes' || hoop != 'y'){
     alert ('I can hula hoop for hours.');
   }
 
   //How about whistling?
   const whistle = prompt ('How about whistling?');
-  if (whistle === 'Yes' || whistle === 'Y'){
+  if (whistle === 'yes' || whistle === 'y'){
     alert ( 'I am a terrible whistler.  One note only.');
   }
-  else if (whistle != "Yes" || whistle != 'Y'){
+  else if (whistle != "yes" || whistle != 'y'){
 
     alert ('Good guess!  That skill eludes me.');
   }
@@ -66,7 +83,7 @@ const userName = prompt('Hi! What\'s your name?');{
   if (array1.indexOf(anywhereResponse)=== 2)
     {alert ( 'I would love the beaches of Bali');}
   else if (array1.indexOf(anywhereResponse != 0,1,2));
-{alert (anywhereResponse + 'sounds like a beautiful place to visit.');}
+{alert (anywhereResponse + ' sounds like a beautiful place to visit.');}
   console.log ('I would like to go to ' + anywhereResponse);
 
 //I could eat tacos, pho or chocolate everyday.
@@ -78,7 +95,7 @@ const userName = prompt('Hi! What\'s your name?');{
   }
   else
   {
-    alert (foodResponse + 'is definitely not right.')
+    alert (foodResponse + ' is definitely not right.')
   } 
   console.log ('I sometimes eat ' + foodResponse + ' too.');
 
