@@ -103,18 +103,19 @@ function questionSix(){
 
 function questionSeven (){
   //I could eat tacos, pho or chocolate everyday.
+  for(let i = 0; i < 3; i++){
   const food = ['tacos', 'pho', 'chocolate']
   const foodResponse = prompt ('What food do I eat more of than you might think possible?').toLowerCase();
   if (food.includes (foodResponse))
   {
-    alert ('I never get tired of  ' + foodResponse);
+    alert ('I never get tired of  ' + foodResponse + '.' + ' I\'ll give you ' + (2 - i) + ' more guesses!');
     totalScore++;
   }
   else
   {
-    alert (foodResponse + ' is definitely not right.')
+    alert (foodResponse + ' is definitely not right. You have ' + (2 - i) + ' guesses left.');
   } 
   console.log ('I sometimes eat ' + foodResponse + ' too.');
 }
-
+}
 alert('Nice job ' + userName + ' you got ' + totalScore + ' right!');
