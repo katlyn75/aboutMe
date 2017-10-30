@@ -1,4 +1,6 @@
-  //If I could go anywhere in the world, I would go to New Zealand.
+  'use strict'
+
+//If I could go anywhere in the world, I would go to New Zealand.
   const anywhere = ['Iceland', 'New Zealand', 'Bali']
   const anywhereResponse =  prompt('If I could go anywhere in the world today, where would I go?');
   if (anywhere.indexOf (anywhereResponse)=== 0)
@@ -23,7 +25,7 @@
 
 //I love sloths.
   const animal  = prompt ('Do I love sloths?')
-  if  (animal.toLowercase ()=== 'yes' || animal.toLowercase ()=== 'y'){
+  if  (animal.toLowerCase ()=== 'yes' || animal.toLowerCase ()=== 'y'){
   alert ("Sloths are so wierd.  I love them.");}
   else (animalResponse != sloth)
   {alert ('That is also a very cool animal.');}
